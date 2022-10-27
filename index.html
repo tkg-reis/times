@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="stopwatch_timer_calender_clock">
+    <link rel="stylesheet" href="style.css">
+    <title>stopwatch_timer_calender_clock</title>
+</head>
+<body>
+    <main class="main">
+        <div class="time stopwatch">
+            <h1>stopwatch</h1>
+            <div id="display">00:00:00</div>
+            <div class="buttons">
+                <button id="startstop">start</button>
+                <button id="reset">reset</button>
+            </div>
+        </div>
+        <div class="time timer">
+            <h1>timer</h1>
+            <h2 id="time">?</h2>
+            <input type="text" id="sec">
+            <button id="start">start</button>
+        </div>
+        <div class="time calender">
+            <h1>calender</h1>
+            <table>
+                <thead class="data-head">
+                    <tr>
+                        <td>sun</td>
+                        <td>mon</td>
+                        <td>tus</td>
+                        <td>wed</td>
+                        <td>thu</td>
+                        <td>fri</td>
+                        <td>sat</td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="time clock">
+            <h1>clock</h1>
+            <strong class="clocktime"></strong>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

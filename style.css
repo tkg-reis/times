@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+.time {
+    width: 45%;
+    padding: 10px;
+    margin: 2px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    flex-direction: column;
+}
+.stopwatch {
+    background-color: brown;
+}
+.timer {
+    background-color: blueviolet;
+}
+.calender {
+    background-color: violet;
+}
+.clock {
+    background-color: yellowgreen;
+}
+h1 {
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+#display {
+    text-align: center;
+    font-size: 3rem;
+}
+.buttons {
+    text-align: center;
+}
+#startstop,
+#reset
+{
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#reset {
+    margin-left: 5px;
+}
+.flashing {
+    animation: flashing 1.5s infinite;
+}
+@keyframes flashing {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#time,
+#sec,
+#start {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+#sec {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    background-color: blueviolet;
+}
+#start {
+    padding: 5px;
+    border-radius: 5px;
+}
+.clocktime {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
